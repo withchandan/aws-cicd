@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installig phase
+
+  pre_build:
+    commands:
+      - echo Pre build phase
+
+  build:
+    commands:
+      - echo Building phase
+
+  post_build:
+    commands:
+      - echo Post build phase
+
+artifacts:
+  type: zip
+  paths:
+    - './build/**/*'
+    - './cicd/**/*'
+
+cache:
+  paths:
+    - './node_modules/**/*'
