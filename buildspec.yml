@@ -18,11 +18,4 @@ phases:
       - echo Post build phase
 
 artifacts:
-  type: zip
-  paths:
-    - './build/**/*'
-    - './cicd/**/*'
-
-cache:
-  paths:
-    - './node_modules/**/*'
+  files: '**/*'
